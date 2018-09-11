@@ -1,0 +1,18 @@
+       ERR-FSGSER SECTION.
+           USE AFTER ERROR PROCEDURE ON FSGSER.
+       ER-FSGSER.
+           EVALUATE ERRORES
+              WHEN "35"
+                 CALL "ASGSER" USING NOMBREFSGSER
+              WHEN "30"
+                 CALL "TSGSER" USING NOMBREFSGSER
+              WHEN "98"
+                 CALL "TSGSER" USING NOMBREFSGSER
+              WHEN "9G"
+                 CALL "TSGSER" USING NOMBREFSGSER
+              WHEN OTHER
+                 CALL "PRUERR" USING ERRORES NOMBREFSGSER PROG
+                 CANCEL "PRUERR"
+           END-EVALUATE.
+       FIN-ERR-FSGSER.
+           EXIT.

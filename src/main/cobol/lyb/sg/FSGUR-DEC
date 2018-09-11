@@ -1,0 +1,18 @@
+       ERR-FSGUR SECTION.
+           USE AFTER ERROR PROCEDURE ON FSGUR.
+       ER-FSGUR.
+           EVALUATE ERRORES
+              WHEN "35"
+                 CALL "ASGUR" USING NOMBREFSGUR
+              WHEN "30"
+                 CALL "TSGUR" USING NOMBREFSGUR
+              WHEN "98"
+                 CALL "TSGUR" USING NOMBREFSGUR
+              WHEN "9G"
+                 CALL "TSGUR" USING NOMBREFSGUR
+              WHEN OTHER
+                 CALL "PRUERR" USING ERRORES NOMBREFSGUR PROG
+                 CANCEL "PRUERR"
+           END-EVALUATE.
+       FIN-ERR-FSGUR.
+           EXIT.

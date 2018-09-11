@@ -1,0 +1,9 @@
+      *#    ROLES, JAVA SI.
+
+       FD   FSGROLE
+            DATA RECORD IS RSGROLE.
+       01   RSGROLE.
+            03 CLA       PIC X(64).
+            03 DES       PIC X(64).
+            03 FILLER    PIC X(64).
+

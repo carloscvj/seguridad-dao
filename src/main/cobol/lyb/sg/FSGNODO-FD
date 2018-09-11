@@ -1,0 +1,8 @@
+      *#    MENUNODO, JAVA SI.
+
+       FD   FSGNODO
+            DATA RECORD IS RSGNODO.
+       01   RSGNODO.
+            03 CLA       PIC X(64).
+            03 FILLER    PIC X(64).
+

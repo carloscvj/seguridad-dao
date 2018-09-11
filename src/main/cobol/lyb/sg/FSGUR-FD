@@ -1,0 +1,10 @@
+      *#    RELACION USER-ROLES, JAVA SI.
+
+       FD   FSGUR
+            DATA RECORD IS RSGUR.
+       01   RSGUR.
+            03 CLA.
+               05 CLA-USER  PIC X(64).
+               05 CLA-ROLE  PIC X(64).
+            03 FILLER    PIC X(64).
+

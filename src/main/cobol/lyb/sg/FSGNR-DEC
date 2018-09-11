@@ -1,0 +1,18 @@
+       ERR-FSGNR SECTION.
+           USE AFTER ERROR PROCEDURE ON FSGNR.
+       ER-FSGNR.
+           EVALUATE ERRORES
+              WHEN "35"
+                 CALL "ASGNR" USING NOMBREFSGNR
+              WHEN "30"
+                 CALL "TSGNR" USING NOMBREFSGNR
+              WHEN "98"
+                 CALL "TSGNR" USING NOMBREFSGNR
+              WHEN "9G"
+                 CALL "TSGNR" USING NOMBREFSGNR
+              WHEN OTHER
+                 CALL "PRUERR" USING ERRORES NOMBREFSGNR PROG
+                 CANCEL "PRUERR"
+           END-EVALUATE.
+       FIN-ERR-FSGNR.
+           EXIT.

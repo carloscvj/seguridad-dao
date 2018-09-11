@@ -1,0 +1,10 @@
+           SELECT FSGROLE
+                  ASSIGN TO RANDOM NOMBREFSGROLE
+                  ORGANIZATION IS INDEXED
+                  ACCESS MODE IS DYNAMIC
+                  RECORD KEY IS CLA OF FSGROLE
+                  ALTERNATE RECORD KEY IS DES OF FSGROLE
+                            WITH DUPLICATES
+                  LOCK MODE AUTOMATIC WITH LOCK ON RECORD
+                  FILE STATUS IS ERRORES.
+

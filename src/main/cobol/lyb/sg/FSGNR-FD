@@ -1,0 +1,10 @@
+      *#    RELACION NODO-ROLES, JAVA SI.
+
+       FD   FSGNR
+            DATA RECORD IS RSGNR.
+       01   RSGNR.
+            03 CLA.
+               05 CLA-NODO  PIC X(64).
+               05 CLA-ROLE  PIC X(64).
+            03 FILLER    PIC X(64).
+

@@ -1,0 +1,18 @@
+       ERR-FSGROLE SECTION.
+           USE AFTER ERROR PROCEDURE ON FSGROLE.
+       ER-FSGROLE.
+           EVALUATE ERRORES
+              WHEN "35"
+                 CALL "ASGROLE" USING NOMBREFSGROLE
+              WHEN "30"
+                 CALL "TSGROLE" USING NOMBREFSGROLE
+              WHEN "98"
+                 CALL "TSGROLE" USING NOMBREFSGROLE
+              WHEN "9G"
+                 CALL "TSGROLE" USING NOMBREFSGROLE
+              WHEN OTHER
+                 CALL "PRUERR" USING ERRORES NOMBREFSGROLE PROG
+                 CANCEL "PRUERR"
+           END-EVALUATE.
+       FIN-ERR-FSGROLE.
+           EXIT.

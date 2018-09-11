@@ -1,0 +1,18 @@
+       ERR-FSGNODO SECTION.
+           USE AFTER ERROR PROCEDURE ON FSGNODO.
+       ER-FSGNODO.
+           EVALUATE ERRORES
+              WHEN "35"
+                 CALL "ASGNODO" USING NOMBREFSGNODO
+              WHEN "30"
+                 CALL "TSGNODO" USING NOMBREFSGNODO
+              WHEN "98"
+                 CALL "TSGNODO" USING NOMBREFSGNODO
+              WHEN "9G"
+                 CALL "TSGNODO" USING NOMBREFSGNODO
+              WHEN OTHER
+                 CALL "PRUERR" USING ERRORES NOMBREFSGNODO PROG
+                 CANCEL "PRUERR"
+           END-EVALUATE.
+       FIN-ERR-FSGNODO.
+           EXIT.

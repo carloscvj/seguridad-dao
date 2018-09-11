@@ -1,0 +1,10 @@
+      *#    USUARIOS, JAVA SI.
+
+       FD   FSGSER
+            DATA RECORD IS RSGSER.
+       01   RSGSER.
+            03 CLA       PIC X(64).
+            03 DES       PIC X(64).
+            03 PASS      PIC X(64).
+            03 FILLER    PIC X(64).
+

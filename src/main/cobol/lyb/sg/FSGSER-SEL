@@ -1,0 +1,10 @@
+           SELECT FSGSER
+                  ASSIGN TO RANDOM NOMBREFSGSER
+                  ORGANIZATION IS INDEXED
+                  ACCESS MODE IS DYNAMIC
+                  RECORD KEY IS CLA OF FSGSER
+                  ALTERNATE RECORD KEY IS DES OF FSGSER
+                            WITH DUPLICATES
+                  LOCK MODE AUTOMATIC WITH LOCK ON RECORD
+                  FILE STATUS IS ERRORES.
+
