@@ -1,8 +1,8 @@
            SELECT FSGNODO
-                  ASSIGN TO RANDOM NOMBREFSGNODO
+                  ASSIGN TO NOMBREFSGNODO
                   ORGANIZATION IS INDEXED
                   ACCESS MODE IS DYNAMIC
                   RECORD KEY IS CLA OF FSGNODO
-                  LOCK MODE AUTOMATIC WITH LOCK ON RECORD
+                 
                   FILE STATUS IS ERRORES.
 

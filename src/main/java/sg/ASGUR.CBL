@@ -1,6 +1,9 @@
         IDENTIFICATION DIVISION.
         PROGRAM-ID.    ASGUR.
         SECURITY.      ASIGNADOR.
+
+        ENVIRONMENT DIVISION.
+
         INPUT-OUTPUT SECTION.
         FILE-CONTROL.
             COPY "FSGUR-SEL".

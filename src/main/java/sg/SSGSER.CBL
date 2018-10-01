@@ -4,6 +4,8 @@
        AUTHOR.        El hacedor de SERVIDORES.
        SECURITY.      SERVIDOR DE FSGSER.
 
+        ENVIRONMENT DIVISION.
+
        INPUT-OUTPUT SECTION.
        FILE-CONTROL.
            COPY "FSGSER-SEL".
@@ -736,7 +738,7 @@
            MOVE SPACES TO DIRECTORIO.
            PERFORM VARYING II FROM 1 BY 1 UNTIL II > 256
                    IF BUF-1(II) = "/" OR "\"
-                      CALL "CBL_CREATE_DIR" USING DIRECTORIO ESTADO
+                      CALL "CBL_CREATE_DIR" USING DIRECTORIO
                    END-IF
                    MOVE BUF-1(II) TO DIR-1(II)
                    IF DIR-1(II) = " "

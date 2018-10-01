@@ -10,7 +10,7 @@
             COPY "FSGROLE-SEL".
 
             SELECT FOLD
-                   ASSIGN TO RANDOM NOMBREOLD
+                   ASSIGN TO NOMBREOLD
                    ORGANIZATION IS LINE SEQUENTIAL
                    ACCESS MODE IS SEQUENTIAL
                    FILE STATUS IS ERRORES.

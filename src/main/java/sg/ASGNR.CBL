@@ -1,6 +1,9 @@
         IDENTIFICATION DIVISION.
         PROGRAM-ID.    ASGNR.
         SECURITY.      ASIGNADOR.
+
+        ENVIRONMENT DIVISION.
+
         INPUT-OUTPUT SECTION.
         FILE-CONTROL.
             COPY "FSGNR-SEL".

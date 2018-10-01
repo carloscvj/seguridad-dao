@@ -1,6 +1,9 @@
         IDENTIFICATION DIVISION.
         PROGRAM-ID.    ASGSER.
         SECURITY.      ASIGNADOR.
+
+        ENVIRONMENT DIVISION.
+
         INPUT-OUTPUT SECTION.
         FILE-CONTROL.
             COPY "FSGSER-SEL".

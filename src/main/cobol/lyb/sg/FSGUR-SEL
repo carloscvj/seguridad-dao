@@ -1,8 +1,8 @@
            SELECT FSGUR
-                  ASSIGN TO RANDOM NOMBREFSGUR
+                  ASSIGN TO NOMBREFSGUR
                   ORGANIZATION IS INDEXED
                   ACCESS MODE IS DYNAMIC
                   RECORD KEY IS CLA OF FSGUR
-                  LOCK MODE AUTOMATIC WITH LOCK ON RECORD
+                 
                   FILE STATUS IS ERRORES.
 

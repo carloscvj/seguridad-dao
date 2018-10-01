@@ -1,8 +1,8 @@
            SELECT FSGNR
-                  ASSIGN TO RANDOM NOMBREFSGNR
+                  ASSIGN TO NOMBREFSGNR
                   ORGANIZATION IS INDEXED
                   ACCESS MODE IS DYNAMIC
                   RECORD KEY IS CLA OF FSGNR
-                  LOCK MODE AUTOMATIC WITH LOCK ON RECORD
+                 
                   FILE STATUS IS ERRORES.
 
